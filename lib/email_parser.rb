@@ -15,14 +15,15 @@ class EmailAddressParser
   def parse
 
     array = csv_emails.split(", ")
+
+    new_array = array.map do |string|
       if string.match(" ")
         string.split(" ")
       else string
       end
     end
-    # binding.pry
 
-    new_array.flatten.uniq
+    new_array.flatten
 
   end
 
