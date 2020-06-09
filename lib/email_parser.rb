@@ -14,27 +14,9 @@ class EmailAddressParser
 
   def parse
 
-    array = csv_emails.split(", ")
 
-    new_array = array.map do |string|
-        string.split(" ")
-      end
 
-    new_array.flatten.uniq
-
-  end
-
-#   csv_emails = "avi@test.com, arel@test.com arel@test.com"
-#
-#
-#   array = csv_emails.split(", ")
-#
-# new_array = array.map do |string|
-#
-#     string.split(" ")
-# end
-#
-# puts new_array.flatten
+    array = csv_emails.split(", ").map{|string| string.split(" ")}.flatten
 
 
 end
