@@ -26,15 +26,15 @@ class EmailAddressParser
   end
 
 #   csv_emails = "avi@test.com, arel@test.com arel@test.com"
-# 
-# 
+#
+#
 #   array = csv_emails.split(", ")
-# 
+#
 # new_array = array.map do |string|
-# 
+#
 #     string.split(" ")
 # end
-# 
+#
 # puts new_array.flatten
 
 
