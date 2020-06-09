@@ -6,7 +6,6 @@ require 'pry'
 
 class EmailAddressParser
 
-<<<<<<< HEAD
   attr_accessor :csv_emails
 
   def initialize(csv_emails)
@@ -20,7 +19,6 @@ class EmailAddressParser
     end
     .flatten.uniq
   end
-=======
->>>>>>> 9f4e490ad67cbef0310f19c269ff9f11526d3b33
+
 
 end
