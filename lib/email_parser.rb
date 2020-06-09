@@ -14,6 +14,6 @@ class EmailAddressParser
 
   def parse
     array = csv_emails.split(", ").map {|string| string.split(" ")}.flatten
-
+  end
 
 end
