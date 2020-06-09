@@ -13,7 +13,7 @@ class EmailAddressParser
   end
 
   def parse
-    array = csv_emails.split(", ").map {|string| string.split(" ")}.flatten
+    array = csv_emails.split(", ").map {|string| string.split(" ")}.flatten.uniq
   end
 
 end
