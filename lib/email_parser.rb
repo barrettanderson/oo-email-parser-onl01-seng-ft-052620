@@ -14,7 +14,8 @@ class EmailAddressParser
 
   def parse
     # binding.pry
-    @csv_emails = @csv_emails.gsub(/[/s,]/)
+    csv_emails.split (', ')
+
   end
 
 
