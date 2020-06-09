@@ -14,19 +14,13 @@ class EmailAddressParser
 
   def parse
 
-
-    if csv_emails.match(",")
-      array = csv_emails.split(", ")
-    else array = csv_emails.split(" ")
-    end
-    binding.pry
-
-    new_array = array.map do |string|
+    array = csv_emails.split(", ")
       if string.match(" ")
         string.split(" ")
       else string
       end
     end
+    # binding.pry
 
     new_array.flatten.uniq
 
