@@ -19,7 +19,6 @@ class EmailAddressParser
     new_array = array.map do |string|
         string.split(" ")
       end
-    end
 
     new_array.flatten.uniq
 
